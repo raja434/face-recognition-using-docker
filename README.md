@@ -8,7 +8,7 @@ This project provides a docker image which offers a web service to recognize kno
 Start by building the docker image with a defined name. This can take a while.
 
 ```bash
-docker build -t facerec_service .
+docker build -t facerecognition .
 ```
 
 ### Run the Docker image
@@ -16,7 +16,7 @@ docker build -t facerec_service .
 Start the image and forward port 8080. Optionally bind a local directory to `/root/faces` to provide a location for predefined images which will be registered at start time.
 
 ```bash
-docker run -d -p8080:8080 -vfaces:/root/faces facerec_service
+docker run -d -p8080:8080 -vfaces:/root/faces facerecognition
 ```
 
 ## Features
