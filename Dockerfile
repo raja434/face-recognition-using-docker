@@ -50,9 +50,9 @@ RUN cd ~ && \
 
 
 # Copy web service script
-COPY facerec_service.py /root/facerec_service.py
+COPY facerec_service.py /root/facerecognition.py
 
 
 # Start the web service
 CMD cd /root/ && \
-    python3 facerec_service.py
+    python3 facerecognition.py
